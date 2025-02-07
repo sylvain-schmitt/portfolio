@@ -109,6 +109,14 @@ section{
     padding: 100px 200px;
 }
 
+.btn-container {
+    display: flex;
+    gap: 10px; /* Espace entre les boutons */
+    justify-content: center;
+    margin-top: 15px;
+}
+
+
 .btn {
     position: relative;
     width: 150px;
@@ -118,8 +126,6 @@ section{
     border-radius: 3px;
     margin-top: 30px;
     margin-bottom: 30px;
-    margin-left: 50%;
-    transform: translate(-50%);
     margin-right: 5px;
     align-items: center;
 }
