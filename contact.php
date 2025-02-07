@@ -14,9 +14,9 @@ $email_address = strip_tags(htmlspecialchars($_POST['email']));
 $message = strip_tags(htmlspecialchars($_POST['message']));
 
 $to = 'sylvain.schmitt70@gmail.com';
-$email_subject = "Website Contact Form:  $name";
+$email_subject = "Demande via le portfolio par :  $name";
 $email_body = "Vous avez reçu un nouveau message depuis le formulaire de contact de votre site Web.\n\n"."Voici les détails:\n\nName: $name\n\nEmail: $email_address\n\nMessage:\n$message";
-$headers = "From: sylvain.schmitt70@gmail.com\n";
+$headers = 'From: Contact Portfolio<sylvain.schmitt70@gmail.com>';
 $headers .= "Reply-To: $email_address";
 mail($to,$email_subject,$email_body,$headers);
 

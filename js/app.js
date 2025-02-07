@@ -57,7 +57,7 @@ window.addEventListener("scroll", event => {
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["Front-end", "Back-end", "Junior", "Cool"];
+const textArray = ["Front-end", "Back-end", "Junior"];
 const typingDelay = 200;
 const erasingDelay = 100;
 const newTextDelay = 2000; // Delay between current and next text
